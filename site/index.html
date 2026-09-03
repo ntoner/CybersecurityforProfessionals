@@ -1,420 +1,913 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" 
-content="width=device-width, initial-scale=1.0">
+    <title>Nathan Toner | Cybersecurity Portfolio</title>
 
-<title>Nathan Toner | Cybersecurity Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- STAGING PASSWORD -->
+<!-- =========================
+     STAGING PASSWORD
+========================= -->
 
-<div id="gate"> <div class="wrap"> <div class="hero"> <p 
-class="eyebrow">PRIVATE STAGING ENVIRONMENT</p>
+<div id="gate">
+    <div class="gate-box">
+
+        <p class="eyebrow">PRIVATE STAGING ENVIRONMENT</p>
 
         <h1>Cybersecurity<br>Portfolio</h1>
 
-        <p class="hero-text">
-            This is a password-protected preview of my portfolio.
+        <p>
+            This is a work-in-progress preview.
+            Enter the staging password to continue.
         </p>
 
-        <input
-            type="password"
-            id="pw"
-            placeholder="Enter staging password"
-            style="padding:12px; margin-right:8px;"
-        >
+        <div class="password-form">
+            <input
+                type="password"
+                id="pw"
+                placeholder="Staging password"
+            >
 
-        <button onclick="checkPw()" class="button">
-            Enter
-        </button>
+            <button onclick="checkPw()">
+                Enter
+            </button>
+        </div>
 
-        <p id="err" style="color:red; display:none;">
+        <p id="err">
             Incorrect password.
         </p>
+
     </div>
 </div>
 
-</div>
 
-<!-- PORTFOLIO -->
+<!-- =========================
+     PORTFOLIO
+========================= -->
 
-<div id="content" style="display:none;">
+<div id="content">
 
-<!-- HEADER -->
-<header class="site-header">
-    <div class="wrap">
-        <div class="site-header-inner">
+    <!-- HEADER -->
 
-            <a href="#" class="site-title">
-                Nathan Toner
-            </a>
+    <header class="site-header">
 
-            <nav>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#tls">TLS Audit</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-        </div>
-    </div>
-</header>
-
-
-<main>
-
-    <!-- HERO -->
-    <section class="hero">
         <div class="wrap">
 
-            <p class="eyebrow">
-                CYBERSECURITY • INFORMATION SYSTEMS
-            </p>
+            <div class="site-header-inner">
 
-            <h1>
-                Building secure systems<br>
-                through hands-on practice.
-            </h1>
-
-            <p class="hero-text">
-                I'm Nathan Toner, a Computer Information Systems student
-                developing practical cybersecurity skills through
-                security labs, network analysis, vulnerability assessment,
-                and security monitoring.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#projects" class="button">
-                    Explore My Work
+                <a href="#top" class="site-title">
+                    Nathan Toner
                 </a>
 
-                <a href="#contact" class="button button-secondary">
-                    Get In Touch
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="wrap">
-
-            <p class="eyebrow">01 — ABOUT</p>
-
-            <h2>
-                A hands-on approach to cybersecurity.
-            </h2>
-
-            <div class="about-grid">
-
-                <div>
-                    <p>
-                        I am a Computer Information Systems student with
-                        a focus on cybersecurity and information security.
-                    </p>
-
-                    <p>
-                        My experience includes working with Linux,
-                        network security, vulnerability assessment,
-                        SIEM platforms, TLS security, and security
-                        monitoring.
-                    </p>
-                </div>
-
-                <div>
-                    <p><strong>Areas of Focus</strong></p>
-
-                    <ul>
-                        <li>Security Operations</li>
-                        <li>Network Security</li>
-                        <li>Vulnerability Assessment</li>
-                        <li>Linux Security</li>
-                        <li>Cloud & Enterprise Security</li>
-                    </ul>
-                </div>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#tls">TLS Audit</a>
+                    <a href="#contact">Contact</a>
+                </nav>
 
             </div>
 
         </div>
-    </section>
+
+    </header>
 
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <div class="wrap">
+    <main id="top">
 
-            <p class="eyebrow">02 — SKILLS</p>
+        <!-- =========================
+             HERO
+        ========================= -->
 
-            <h2>Technical Skills</h2>
+        <section class="hero">
 
-            <div class="skills-table">
+            <div class="wrap">
 
-                <div class="skill-row">
-                    <strong>Security Operations</strong>
-                    <span>Microsoft Sentinel, Microsoft Defender</span>
-                </div>
+                <p class="eyebrow">
+                    CYBERSECURITY • INFORMATION SYSTEMS
+                </p>
 
-                <div class="skill-row">
-                    <strong>Network Security</strong>
-                    <span>Nmap, Wireshark</span>
-                </div>
+                <h1>
+                    Building secure systems<br>
+                    through hands-on practice.
+                </h1>
 
-                <div class="skill-row">
-                    <strong>Security Testing</strong>
-                    <span>Metasploit, OpenSSL</span>
-                </div>
+                <p class="hero-text">
+                    I'm Nathan Toner, a Computer Information Systems 
+student
+                    developing practical cybersecurity skills through
+                    security operations, network analysis, vulnerability
+                    assessment, Linux hardening, and security monitoring.
+                </p>
 
-                <div class="skill-row">
-                    <strong>Linux Security</strong>
-                    <span>Ubuntu, permissions, authentication, 
-hardening</span>
-                </div>
+                <div class="hero-actions">
 
-                <div class="skill-row">
-                    <strong>Programming</strong>
-                    <span>Python, Java, SQL, HTML</span>
-                </div>
+                    <a href="#projects" class="button">
+                        View My Work
+                    </a>
 
-                <div class="skill-row">
-                    <strong>Data & Analytics</strong>
-                    <span>Power BI, Pandas, Excel</span>
+                    <a href="#contact" class="button button-secondary">
+                        Contact Me
+                    </a>
+
                 </div>
 
             </div>
 
-        </div>
-    </section>
+        </section>
 
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <div class="wrap">
+        <!-- =========================
+             ABOUT
+        ========================= -->
 
-            <p class="eyebrow">03 — PROJECTS</p>
+        <section id="about">
 
-            <h2>Security Projects & Labs</h2>
+            <div class="wrap">
 
-            <div class="repo-list">
+                <p class="eyebrow">
+                    01 — ABOUT
+                </p>
 
-                <article>
-                    <h3>Linux Security Hardening</h3>
+                <h2>
+                    A hands-on approach to cybersecurity.
+                </h2>
 
-                    <p>
-                        Reviewed Linux accounts, sudo configuration,
-                        file permissions, authentication policies,
-                        and security tools to improve the security
-                        posture of an Ubuntu environment.
-                    </p>
+                <div class="about-grid">
 
-                    <p>
-                        <strong>Tools:</strong>
-                        Ubuntu Linux, AIDE, PAM, auditd
-                    </p>
-                </article>
+                    <div>
+
+                        <p>
+                            I am a Computer Information Systems student
+                            focused on cybersecurity and information 
+security.
+                        </p>
+
+                        <p>
+                            My hands-on experience includes network
+                            reconnaissance, Linux security hardening,
+                            vulnerability assessment, TLS security 
+testing,
+                            SIEM monitoring, and security analysis.
+                        </p>
+
+                        <p>
+                            I enjoy learning how systems work, identifying
+                            security weaknesses, and developing practical
+                            solutions to improve security posture.
+                        </p>
+
+                    </div>
+
+                    <div class="about-card">
+
+                        <p class="card-label">
+                            CURRENT FOCUS
+                        </p>
+
+                        <ul>
+                            <li>Security Operations</li>
+                            <li>Network Security</li>
+                            <li>Vulnerability Assessment</li>
+                            <li>Linux Security</li>
+                            <li>Cloud Security</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-                <article>
-                    <h3>Network Reconnaissance</h3>
+        <!-- =========================
+             SKILLS
+        ========================= -->
 
-                    <p>
-                        Performed controlled network reconnaissance to
-                        identify open ports, services, and potential
-                        vulnerabilities in a cybersecurity lab 
-environment.
-                    </p>
+        <section id="skills">
 
-                    <p>
-                        <strong>Tools:</strong>
-                        Nmap, Wireshark
-                    </p>
-                </article>
+            <div class="wrap">
+
+                <p class="eyebrow">
+                    02 — SKILLS
+                </p>
+
+                <h2>
+                    Technical Skills
+                </h2>
+
+                <p class="section-intro">
+                    Tools and technologies I have worked with through
+                    coursework, cybersecurity labs, and hands-on projects.
+                </p>
+
+                <div class="skills-table">
+
+                    <div class="skill-row">
+                        <strong>Security Operations</strong>
+                        <span>Microsoft Sentinel, Microsoft 
+Defender</span>
+                    </div>
+
+                    <div class="skill-row">
+                        <strong>Network Security</strong>
+                        <span>Nmap, Wireshark</span>
+                    </div>
+
+                    <div class="skill-row">
+                        <strong>Security Testing</strong>
+                        <span>Metasploit, OpenSSL</span>
+                    </div>
+
+                    <div class="skill-row">
+                        <strong>Linux Security</strong>
+                        <span>Ubuntu, PAM, auditd, AIDE</span>
+                    </div>
+
+                    <div class="skill-row">
+                        <strong>Programming</strong>
+                        <span>Python, Java, SQL, HTML</span>
+                    </div>
+
+                    <div class="skill-row">
+                        <strong>Data & Analytics</strong>
+                        <span>Power BI, Pandas, Excel</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-                <article>
-                    <h3>Security Monitoring</h3>
+        <!-- =========================
+             CERTIFICATIONS
+        ========================= -->
 
-                    <p>
-                        Practiced security monitoring and detection using
-                        SIEM and endpoint security platforms to 
+        <section id="certifications">
+
+            <div class="wrap">
+
+                <p class="eyebrow">
+                    03 — DEVELOPMENT
+                </p>
+
+                <h2>
+                    Certifications & Development
+                </h2>
+
+                <div class="cert-grid">
+
+                    <div class="cert-card">
+
+                        <p class="cert-status">
+                            IN PROGRESS
+                        </p>
+
+                        <h3>
+                            CompTIA Security+
+                        </h3>
+
+                        <p>
+                            Building foundational knowledge across network
+                            security, threats, vulnerabilities, identity,
+                            risk management, and security operations.
+                        </p>
+
+                        <span class="cert-date">
+                            Target: November 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="cert-card">
+
+                        <p class="cert-status">
+                            PLANNED
+                        </p>
+
+                        <h3>
+                            CompTIA CySA+
+                        </h3>
+
+                        <p>
+                            Future focus on security analytics, threat
+                            detection, incident response, and 
+vulnerability
+                            management.
+                        </p>
+
+                        <span class="cert-date">
+                            Target: February 2027
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================= -->
+
+        <section id="projects">
+
+            <div class="wrap">
+
+                <p class="eyebrow">
+                    04 — PROJECTS
+                </p>
+
+                <h2>
+                    Security Projects & Labs
+                </h2>
+
+                <div class="project-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Linux Security Hardening
+                        </h3>
+
+                        <p>
+                            Reviewed Linux accounts, sudo configuration,
+                            file permissions, authentication policies,
+                            and security tools to improve the security
+                            posture of an Ubuntu environment.
+                        </p>
+
+                        <div class="project-tools">
+                            Ubuntu Linux · PAM · AIDE · auditd
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Network Reconnaissance
+                        </h3>
+
+                        <p>
+                            Performed controlled network reconnaissance to
+                            identify open ports, services, and potential
+                            vulnerabilities in cybersecurity lab 
+environments.
+                        </p>
+
+                        <div class="project-tools">
+                            Nmap · Wireshark
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Security Monitoring
+                        </h3>
+
+                        <p>
+                            Practiced security monitoring and detection 
+using
+                            SIEM and endpoint security platforms to 
 investigate
-                        security events and identify suspicious activity.
-                    </p>
+                            events and identify suspicious activity.
+                        </p>
 
-                    <p>
-                        <strong>Tools:</strong>
-                        Microsoft Sentinel, Microsoft Defender
-                    </p>
-                </article>
+                        <div class="project-tools">
+                            Microsoft Sentinel · Microsoft Defender
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Vulnerability Assessment
+                        </h3>
+
+                        <p>
+                            Used controlled security labs to identify 
+services,
+                            research vulnerabilities, and evaluate 
+potential
+                            security weaknesses.
+                        </p>
+
+                        <div class="project-tools">
+                            Nmap · Metasploit · NVD
+                        </div>
+
+                    </article>
+
+                </div>
 
             </div>
 
-        </div>
-    </section>
+        </section>
 
 
-    <!-- TLS AUDIT -->
-    <section id="tls">
+        <!-- =========================
+             TLS AUDIT
+        ========================= -->
+
+        <section id="tls">
+
+            <div class="wrap">
+
+                <p class="eyebrow">
+                    05 — SECURITY ASSESSMENT
+                </p>
+
+                <h2>
+                    TLS & Certificate Security Audit
+                </h2>
+
+                <p class="section-intro">
+                    A hands-on assessment of intentionally vulnerable TLS
+                    environments using SSL Labs and OpenSSL. The 
+assessment
+                    focused on certificates, protocols, cryptographic
+                    configuration, and recommended remediation.
+                </p>
+
+
+                <!-- AUDIT STATS -->
+
+                <div class="tls-overview">
+
+                    <div class="tls-stat">
+                        <strong>03</strong>
+                        <span>Systems Audited</span>
+                    </div>
+
+                    <div class="tls-stat">
+                        <strong>02</strong>
+                        <span>Medium Findings</span>
+                    </div>
+
+                    <div class="tls-stat tls-stat-high">
+                        <strong>01</strong>
+                        <span>High Finding</span>
+                    </div>
+
+                </div>
+
+
+                <!-- TLS FINDING 1 -->
+
+                <article class="tls-card">
+
+                    <div class="tls-card-header">
+
+                        <div>
+
+                            <p class="finding-number">
+                                FINDING 01
+                            </p>
+
+                            <h3>
+                                tls-v1-1.badssl.com
+                            </h3>
+
+                        </div>
+
+                        <div class="tls-grade">
+                            B
+                        </div>
+
+                    </div>
+
+
+                    <div class="tls-meta">
+
+                        <span>
+                            Severity:
+                            <strong>Medium</strong>
+                        </span>
+
+                        <span>
+                            Issue:
+                            <strong>Deprecated TLS 1.1</strong>
+                        </span>
+
+                    </div>
+
+
+                    <div class="tls-details">
+
+                        <div>
+                            <h4>Finding</h4>
+
+                            <p>
+                                TLS 1.1 is supported alongside TLS 1.2.
+                                TLS 1.1 is deprecated and should no longer
+                                be used.
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h4>Risk</h4>
+
+                            <p>
+                                Supporting an outdated protocol increases
+                                the attack surface and may expose users
+                                to weaknesses associated with legacy TLS
+                                implementations.
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h4>Remediation</h4>
+
+                            <p>
+                                Disable TLS 1.1 and require TLS 1.2 or
+                                TLS 1.3 for client connections.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TLS FINDING 2 -->
+
+                <article class="tls-card tls-card-high">
+
+                    <div class="tls-card-header">
+
+                        <div>
+
+                            <p class="finding-number">
+                                FINDING 02
+                            </p>
+
+                            <h3>
+                                dh480.badssl.com
+                            </h3>
+
+                        </div>
+
+                        <div class="tls-grade tls-grade-f">
+                            F
+                        </div>
+
+                    </div>
+
+
+                    <div class="tls-meta">
+
+                        <span>
+                            Severity:
+                            <strong>High</strong>
+                        </span>
+
+                        <span>
+                            Issue:
+                            <strong>Weak Diffie-Hellman 
+Parameters</strong>
+                        </span>
+
+                    </div>
+
+
+                    <div class="tls-details">
+
+                        <div>
+                            <h4>Finding</h4>
+
+                            <p>
+                                The server uses an insecure 480-bit
+                                Diffie-Hellman parameter configuration.
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h4>Risk</h4>
+
+                            <p>
+                                Weak Diffie-Hellman parameters reduce
+                                the security of the cryptographic key
+                                exchange.
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h4>Remediation</h4>
+
+                            <p>
+                                Replace the weak parameters with strong
+                                DH parameters of at least 2048 bits and
+                                use a modern TLS configuration.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TLS FINDING 3 -->
+
+                <article class="tls-card">
+
+                    <div class="tls-card-header">
+
+                        <div>
+
+                            <p class="finding-number">
+                                FINDING 03
+                            </p>
+
+                            <h3>
+                                incomplete-chain.badssl.com
+                            </h3>
+
+                        </div>
+
+                        <div class="tls-grade">
+                            B
+                        </div>
+
+                    </div>
+
+
+                    <div class="tls-meta">
+
+                        <span>
+                            Severity:
+                            <strong>Medium</strong>
+                        </span>
+
+                        <span>
+                            Issue:
+                            <strong>Incomplete Certificate Chain</strong>
+                        </span>
+
+                    </div>
+
+
+                    <div class="tls-details">
+
+                        <div>
+                            <h4>Finding</h4>
+
+                            <p>
+                                The server does not provide the complete
+                                certificate chain. OpenSSL reported an
+                                inability to verify the certificate 
+issuer.
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h4>Risk</h4>
+
+                            <p>
+                                Clients may fail certificate validation or
+                                display security warnings when connecting
+                                to the server.
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h4>Remediation</h4>
+
+                            <p>
+                                Configure the server to provide the 
+complete
+                                certificate chain, including the required
+                                intermediate certificates.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TOOLS -->
+
+                <div class="audit-tools">
+
+                    <p class="finding-number">
+                        TOOLS USED
+                    </p>
+
+                    <div class="tool-list">
+
+                        <span>SSL Labs</span>
+                        <span>OpenSSL</span>
+                        <span>TLS Testing</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FULL REPORT -->
+
+                <div class="audit-report">
+
+                    <div>
+
+                        <p class="finding-number">
+                            DETAILED REPORT
+                        </p>
+
+                        <h3>
+                            Complete TLS Audit
+                        </h3>
+
+                        <p>
+                            View the complete assessment including testing
+                            methodology, certificate validation, 
+protocols,
+                            cipher information, severity ratings, and
+                            remediation recommendations.
+                        </p>
+
+                    </div>
+
+                    <a
+                        
+href="https://github.com/ntoner/CybersecurityforProfessionals/blob/staging/tls-audits/audit-1.md"
+                        target="_blank"
+                        class="button"
+                    >
+                        View Full Report
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GITHUB
+        ========================= -->
+
+        <section id="github">
+
+            <div class="wrap">
+
+                <p class="eyebrow">
+                    06 — REPOSITORY
+                </p>
+
+                <h2>
+                    More Work
+                </h2>
+
+                <p class="section-intro">
+                    My GitHub repository contains additional cybersecurity
+                    labs, research, presentations, audits, and technical
+                    work.
+                </p>
+
+                <a
+                    
+href="https://github.com/ntoner/CybersecurityforProfessionals"
+                    target="_blank"
+                    class="button"
+                >
+                    View GitHub Repository
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================= -->
+
+        <section id="contact">
+
+            <div class="wrap">
+
+                <p class="eyebrow">
+                    07 — CONTACT
+                </p>
+
+                <h2>
+                    Let's connect.
+                </h2>
+
+                <p class="contact-text">
+                    I'm interested in cybersecurity opportunities,
+                    internships, and opportunities to continue developing
+                    my technical skills.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
         <div class="wrap">
 
-            <p class="eyebrow">04 — SECURITY AUDIT</p>
+            <div class="footer-inner">
 
-            <h2>TLS & Certificate Security Audit</h2>
-
-            <p>
-                I performed a TLS security assessment of several
-                intentionally vulnerable test environments using
-                SSL Labs and OpenSSL.
-            </p>
-
-
-            <div class="repo-list">
-
-                <article>
-                    <h3>tls-v1-1.badssl.com</h3>
-
+                <div>
+                    <strong>Nathan Toner</strong>
                     <p>
-                        <strong>SSL Labs Grade:</strong> B
+                        Cybersecurity • Information Systems
                     </p>
-
-                    <p>
-                        TLS 1.1 was supported alongside TLS 1.2.
-                        TLS 1.1 is deprecated and should be disabled.
-                    </p>
-
-                    <p>
-                        <strong>Severity:</strong> Medium
-                    </p>
-
-                    <p>
-                        <strong>Recommendation:</strong>
-                        Require TLS 1.2 or TLS 1.3.
-                    </p>
-                </article>
-
-
-                <article>
-                    <h3>dh480.badssl.com</h3>
-
-                    <p>
-                        <strong>SSL Labs Grade:</strong> F
-                    </p>
-
-                    <p>
-                        Testing identified an insecure 480-bit
-                        Diffie-Hellman parameter configuration.
-                    </p>
-
-                    <p>
-                        <strong>Severity:</strong> High
-                    </p>
-
-                    <p>
-                        <strong>Recommendation:</strong>
-                        Replace weak DH parameters with strong
-                        parameters of at least 2048 bits.
-                    </p>
-                </article>
-
-
-                <article>
-                    <h3>incomplete-chain.badssl.com</h3>
-
-                    <p>
-                        <strong>SSL Labs Grade:</strong> B
-                    </p>
-
-                    <p>
-                        OpenSSL reported an incomplete certificate
-                        chain because the required intermediate
-                        certificate was not provided.
-                    </p>
-
-                    <p>
-                        <strong>Severity:</strong> Medium
-                    </p>
-
-                    <p>
-                        <strong>Recommendation:</strong>
-                        Configure the server to provide the complete
-                        certificate chain.
-                    </p>
-                </article>
-
-            </div>
-
-
-            <div style="margin-top:40px;">
-
-                <h3>Audit Summary</h3>
+                </div>
 
                 <p>
-                    The audit demonstrated that secure TLS requires
-                    more than simply having HTTPS enabled. Protocol
-                    versions, cryptographic parameters, and certificate
-                    chains all affect the security of encrypted
-                    communications. The most serious finding was the
-                    weak Diffie-Hellman configuration, while the other
-                    findings involved deprecated protocol support and
-                    certificate-chain configuration.
+                    © 2026 Nathan Toner
                 </p>
 
             </div>
 
         </div>
-    </section>
 
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="wrap">
-
-            <p class="eyebrow">05 — CONTACT</p>
-
-            <h2>Let's connect.</h2>
-
-            <p>
-                I'm interested in cybersecurity opportunities,
-                internships, and opportunities to continue developing
-                my technical skills.
-            </p>
-
-        </div>
-    </section>
-
-</main>
-
-
-<!-- FOOTER -->
-<footer>
-    <div class="wrap">
-
-        <p>
-            © 2026 Nathan Toner
-        </p>
-
-        <p>
-            Cybersecurity • Information Systems
-        </p>
-
-    </div>
-</footer>
+    </footer>
 
 </div>
 
-<!-- PASSWORD SCRIPT -->
 
-<script> function checkPw() { const entered = 
-document.getElementById("pw").value; if (entered === "Staging123!") { 
-document.getElementById("gate").style.display = "none"; 
-document.getElementById("content").style.display = "block"; } else { 
-document.getElementById("err").style.display = "block"; } } </script>
+<!-- =========================
+     PASSWORD SCRIPT
+========================= -->
 
-</body> </html>
+<script>
+
+function checkPw() {
+
+    const entered = document.getElementById("pw").value;
+
+    if (entered === "Staging123!") {
+
+        document.getElementById("gate").style.display = "none";
+
+        document.getElementById("content").style.display = "block";
+
+        window.scrollTo(0, 0);
+
+    } else {
+
+        document.getElementById("err").style.display = "block";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
