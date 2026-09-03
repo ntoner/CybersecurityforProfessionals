@@ -1,261 +1,420 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan Toner | Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" 
+content="width=device-width, initial-scale=1.0">
+
+<title>Nathan Toner | Cybersecurity Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<!-- PASSWORD GATE -->
-<div id="gate" style="font-family: sans-serif; max-width: 400px; margin: 
-100px auto; text-align:center;">
-    <h1>Staging Site</h1>
-    <p>This is a work-in-progress preview. Enter the password to 
-continue.</p>
+<!-- STAGING PASSWORD -->
 
-    <input type="password" id="pw" style="padding:8px;">
-    <button onclick="checkPw()" style="padding:8px;">Enter</button>
+<div id="gate"> <div class="wrap"> <div class="hero"> <p 
+class="eyebrow">PRIVATE STAGING ENVIRONMENT</p>
 
-    <p id="err" style="color:red; display:none;">Incorrect password.</p>
+        <h1>Cybersecurity<br>Portfolio</h1>
+
+        <p class="hero-text">
+            This is a password-protected preview of my portfolio.
+        </p>
+
+        <input
+            type="password"
+            id="pw"
+            placeholder="Enter staging password"
+            style="padding:12px; margin-right:8px;"
+        >
+
+        <button onclick="checkPw()" class="button">
+            Enter
+        </button>
+
+        <p id="err" style="color:red; display:none;">
+            Incorrect password.
+        </p>
+    </div>
 </div>
 
+</div>
 
-<!-- PORTFOLIO CONTENT -->
+<!-- PORTFOLIO -->
+
 <div id="content" style="display:none;">
 
-    <header class="site-header">
-        <div class="wrap">
-            <div class="site-header-inner">
-                <a href="#" class="site-title">Nathan Toner</a>
+<!-- HEADER -->
+<header class="site-header">
+    <div class="wrap">
+        <div class="site-header-inner">
 
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
+            <a href="#" class="site-title">
+                Nathan Toner
+            </a>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#tls">TLS Audit</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
         </div>
-    </header>
+    </div>
+</header>
 
 
-    <main>
+<main>
 
-        <!-- HERO -->
-        <section class="hero">
-            <div class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="wrap">
 
-                <p class="eyebrow">CYBERSECURITY • INFORMATION SYSTEMS</p>
+            <p class="eyebrow">
+                CYBERSECURITY • INFORMATION SYSTEMS
+            </p>
 
-                <h1>Cybersecurity<br>Portfolio</h1>
+            <h1>
+                Building secure systems<br>
+                through hands-on practice.
+            </h1>
 
-                <p class="hero-text">
-                    Computer Information Systems student building 
-practical
-                    cybersecurity skills through hands-on labs, security
-                    analysis, and technical projects.
-                </p>
+            <p class="hero-text">
+                I'm Nathan Toner, a Computer Information Systems student
+                developing practical cybersecurity skills through
+                security labs, network analysis, vulnerability assessment,
+                and security monitoring.
+            </p>
 
-                <div class="hero-actions">
-                    <a href="#projects" class="button">View My Work</a>
-                    <a href="#contact" class="button 
-button-secondary">Contact Me</a>
+            <div class="hero-actions">
+                <a href="#projects" class="button">
+                    Explore My Work
+                </a>
+
+                <a href="#contact" class="button button-secondary">
+                    Get In Touch
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="wrap">
+
+            <p class="eyebrow">01 — ABOUT</p>
+
+            <h2>
+                A hands-on approach to cybersecurity.
+            </h2>
+
+            <div class="about-grid">
+
+                <div>
+                    <p>
+                        I am a Computer Information Systems student with
+                        a focus on cybersecurity and information security.
+                    </p>
+
+                    <p>
+                        My experience includes working with Linux,
+                        network security, vulnerability assessment,
+                        SIEM platforms, TLS security, and security
+                        monitoring.
+                    </p>
+                </div>
+
+                <div>
+                    <p><strong>Areas of Focus</strong></p>
+
+                    <ul>
+                        <li>Security Operations</li>
+                        <li>Network Security</li>
+                        <li>Vulnerability Assessment</li>
+                        <li>Linux Security</li>
+                        <li>Cloud & Enterprise Security</li>
+                    </ul>
                 </div>
 
             </div>
-        </section>
+
+        </div>
+    </section>
 
 
-        <!-- ABOUT -->
-        <section id="about">
-            <div class="wrap">
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="wrap">
 
-                <p class="eyebrow">01 — ABOUT</p>
+            <p class="eyebrow">02 — SKILLS</p>
 
-                <h2>Building practical security skills.</h2>
+            <h2>Technical Skills</h2>
 
-                <div class="about-grid">
+            <div class="skills-table">
 
-                    <div>
-                        <p>
-                            I am a Computer Information Systems student 
-focused
-                            on cybersecurity, security operations, and
-                            information security.
-                        </p>
+                <div class="skill-row">
+                    <strong>Security Operations</strong>
+                    <span>Microsoft Sentinel, Microsoft Defender</span>
+                </div>
 
-                        <p>
-                            My experience includes hands-on work with 
-Linux
-                            security hardening, network reconnaissance,
-                            vulnerability assessment, SIEM tools, TLS
-                            configuration, and security monitoring.
-                        </p>
-                    </div>
+                <div class="skill-row">
+                    <strong>Network Security</strong>
+                    <span>Nmap, Wireshark</span>
+                </div>
 
-                    <div>
-                        <p><strong>Focus Areas</strong></p>
+                <div class="skill-row">
+                    <strong>Security Testing</strong>
+                    <span>Metasploit, OpenSSL</span>
+                </div>
 
-                        <ul>
-                            <li>Cybersecurity</li>
-                            <li>Security Operations</li>
-                            <li>Network Security</li>
-                            <li>Risk & Compliance</li>
-                            <li>Cloud Security</li>
-                        </ul>
-                    </div>
+                <div class="skill-row">
+                    <strong>Linux Security</strong>
+                    <span>Ubuntu, permissions, authentication, 
+hardening</span>
+                </div>
 
+                <div class="skill-row">
+                    <strong>Programming</strong>
+                    <span>Python, Java, SQL, HTML</span>
+                </div>
+
+                <div class="skill-row">
+                    <strong>Data & Analytics</strong>
+                    <span>Power BI, Pandas, Excel</span>
                 </div>
 
             </div>
-        </section>
+
+        </div>
+    </section>
 
 
-        <!-- SKILLS -->
-        <section id="skills">
-            <div class="wrap">
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="wrap">
 
-                <p class="eyebrow">02 — SKILLS</p>
+            <p class="eyebrow">03 — PROJECTS</p>
 
-                <h2>Technical Skills</h2>
+            <h2>Security Projects & Labs</h2>
 
-                <div class="skills-table">
+            <div class="repo-list">
 
-                    <div class="skill-row">
-                        <strong>SIEM</strong>
-                        <span>Microsoft Sentinel</span>
-                    </div>
+                <article>
+                    <h3>Linux Security Hardening</h3>
 
-                    <div class="skill-row">
-                        <strong>Network Security</strong>
-                        <span>Nmap, Wireshark</span>
-                    </div>
+                    <p>
+                        Reviewed Linux accounts, sudo configuration,
+                        file permissions, authentication policies,
+                        and security tools to improve the security
+                        posture of an Ubuntu environment.
+                    </p>
 
-                    <div class="skill-row">
-                        <strong>Security Testing</strong>
-                        <span>Metasploit, OpenSSL</span>
-                    </div>
-
-                    <div class="skill-row">
-                        <strong>Linux</strong>
-                        <span>Ubuntu security hardening</span>
-                    </div>
-
-                    <div class="skill-row">
-                        <strong>Programming</strong>
-                        <span>Python, Java, SQL</span>
-                    </div>
-
-                    <div class="skill-row">
-                        <strong>Data & Analytics</strong>
-                        <span>Power BI, Pandas, Excel</span>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
+                    <p>
+                        <strong>Tools:</strong>
+                        Ubuntu Linux, AIDE, PAM, auditd
+                    </p>
+                </article>
 
 
-        <!-- PROJECTS -->
-        <section id="projects">
-            <div class="wrap">
+                <article>
+                    <h3>Network Reconnaissance</h3>
 
-                <p class="eyebrow">03 — PROJECTS</p>
+                    <p>
+                        Performed controlled network reconnaissance to
+                        identify open ports, services, and potential
+                        vulnerabilities in a cybersecurity lab 
+environment.
+                    </p>
 
-                <h2>Selected Work</h2>
+                    <p>
+                        <strong>Tools:</strong>
+                        Nmap, Wireshark
+                    </p>
+                </article>
 
-                <div class="repo-list">
 
-                    <article>
-                        <h3>Linux Security Hardening</h3>
-                        <p>
-                            Hardened an Ubuntu Linux environment by 
-reviewing
-                            accounts, permissions, sudo configuration,
-                            authentication policies, and security tools.
-                        </p>
-                    </article>
+                <article>
+                    <h3>Security Monitoring</h3>
 
-                    <article>
-                        <h3>Network Reconnaissance</h3>
-                        <p>
-                            Used Nmap to identify open ports, services, 
-and
-                            potential vulnerabilities in controlled
-                            cybersecurity lab environments.
-                        </p>
-                    </article>
+                    <p>
+                        Practiced security monitoring and detection using
+                        SIEM and endpoint security platforms to 
+investigate
+                        security events and identify suspicious activity.
+                    </p>
 
-                    <article>
-                        <h3>TLS & Certificate Audit</h3>
-                        <p>
-                            Evaluated TLS configurations and certificate
-                            security using SSL Labs and OpenSSL, 
-identifying
-                            deprecated protocols and certificate issues.
-                        </p>
-                    </article>
-
-                    <article>
-                        <h3>Security Monitoring</h3>
-                        <p>
-                            Practiced security monitoring and detection
-                            activities using Microsoft Sentinel and
-                            Microsoft Defender.
-                        </p>
-                    </article>
-
-                </div>
+                    <p>
+                        <strong>Tools:</strong>
+                        Microsoft Sentinel, Microsoft Defender
+                    </p>
+                </article>
 
             </div>
-        </section>
+
+        </div>
+    </section>
 
 
-        <!-- CONTACT -->
-        <section id="contact">
-            <div class="wrap">
+    <!-- TLS AUDIT -->
+    <section id="tls">
+        <div class="wrap">
 
-                <p class="eyebrow">04 — CONTACT</p>
+            <p class="eyebrow">04 — SECURITY AUDIT</p>
 
-                <h2>Let's connect.</h2>
+            <h2>TLS & Certificate Security Audit</h2>
+
+            <p>
+                I performed a TLS security assessment of several
+                intentionally vulnerable test environments using
+                SSL Labs and OpenSSL.
+            </p>
+
+
+            <div class="repo-list">
+
+                <article>
+                    <h3>tls-v1-1.badssl.com</h3>
+
+                    <p>
+                        <strong>SSL Labs Grade:</strong> B
+                    </p>
+
+                    <p>
+                        TLS 1.1 was supported alongside TLS 1.2.
+                        TLS 1.1 is deprecated and should be disabled.
+                    </p>
+
+                    <p>
+                        <strong>Severity:</strong> Medium
+                    </p>
+
+                    <p>
+                        <strong>Recommendation:</strong>
+                        Require TLS 1.2 or TLS 1.3.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>dh480.badssl.com</h3>
+
+                    <p>
+                        <strong>SSL Labs Grade:</strong> F
+                    </p>
+
+                    <p>
+                        Testing identified an insecure 480-bit
+                        Diffie-Hellman parameter configuration.
+                    </p>
+
+                    <p>
+                        <strong>Severity:</strong> High
+                    </p>
+
+                    <p>
+                        <strong>Recommendation:</strong>
+                        Replace weak DH parameters with strong
+                        parameters of at least 2048 bits.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>incomplete-chain.badssl.com</h3>
+
+                    <p>
+                        <strong>SSL Labs Grade:</strong> B
+                    </p>
+
+                    <p>
+                        OpenSSL reported an incomplete certificate
+                        chain because the required intermediate
+                        certificate was not provided.
+                    </p>
+
+                    <p>
+                        <strong>Severity:</strong> Medium
+                    </p>
+
+                    <p>
+                        <strong>Recommendation:</strong>
+                        Configure the server to provide the complete
+                        certificate chain.
+                    </p>
+                </article>
+
+            </div>
+
+
+            <div style="margin-top:40px;">
+
+                <h3>Audit Summary</h3>
 
                 <p>
-                    I am interested in cybersecurity opportunities,
-                    internships, and continued professional development.
+                    The audit demonstrated that secure TLS requires
+                    more than simply having HTTPS enabled. Protocol
+                    versions, cryptographic parameters, and certificate
+                    chains all affect the security of encrypted
+                    communications. The most serious finding was the
+                    weak Diffie-Hellman configuration, while the other
+                    findings involved deprecated protocol support and
+                    certificate-chain configuration.
                 </p>
 
             </div>
-        </section>
 
-    </main>
-
-
-    <footer>
-        <div class="wrap">
-            <p>© 2026 Nathan Toner</p>
         </div>
-    </footer>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="wrap">
+
+            <p class="eyebrow">05 — CONTACT</p>
+
+            <h2>Let's connect.</h2>
+
+            <p>
+                I'm interested in cybersecurity opportunities,
+                internships, and opportunities to continue developing
+                my technical skills.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="wrap">
+
+        <p>
+            © 2026 Nathan Toner
+        </p>
+
+        <p>
+            Cybersecurity • Information Systems
+        </p>
+
+    </div>
+</footer>
 
 </div>
 
-
 <!-- PASSWORD SCRIPT -->
-<script>
-function checkPw() {
-    const entered = document.getElementById('pw').value;
 
-    if (entered === "Staging123!") {
-        document.getElementById('gate').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-    } else {
-        document.getElementById('err').style.display = 'block';
-    }
-}
-</script>
+<script> function checkPw() { const entered = 
+document.getElementById("pw").value; if (entered === "Staging123!") { 
+document.getElementById("gate").style.display = "none"; 
+document.getElementById("content").style.display = "block"; } else { 
+document.getElementById("err").style.display = "block"; } } </script>
 
-</body>
-</html>
+</body> </html>
