@@ -1,11 +1,21 @@
 # Nathan Toner - Cybersecurity Portfolio
 
 ## About Me
-I am a cybersecurity bootcamp student building hands-on experience through labs, technical projects, and real-world security tools. I am developing my skills in areas such as network security, Linux security, vulnerability assessment, security operations, governance risk and compliance (GRC), and incident response. I am working toward a career in cybersecurity where I can use my technical and problem-solving skills to help organizations identify risks, respond to security incidents, and protect their systems and data.
+I earned my Bachelor of Science in Computer and Information Systems from Robert Morris University with a focus in Data Analytics. I have developed hands-on cybersecurity experience through labs, technical projects, coursework, and security-focused exercises.
 
+My experience includes network security, Linux security, vulnerability assessment, security operations, governance, risk and compliance (GRC), incident response, TLS and certificate security, and data analytics. I enjoy identifying security weaknesses, analyzing technical information, solving problems, and developing practical solutions to improve security.
+
+##Education
+Robert Morris University
+Bachelor of Science in Computer and Information Systems
+Focus: Data Analytics
+Completed 2026
+
+My education provided experience in data analysis, information systems, programming, databases, cybersecurity, and technical problem solving.
 ## Goals
-I am working toward a career in cybersecurity and want to continue developing my technical and analytical skills through hands-on experience. My goals are to build experience in security operations, governance, risk and compliance (GRC), incident response, and other areas of cybersecurity while continuing to expand my knowledge and certifications. As I gain experience, I would also like to grow into a leadership position where I can help guide security teams, improve security practices, and contribute to an organization's overall security strategy.
+I am working toward a career in cybersecurity and want to continue developing my technical and analytical skills through hands-on experience. My goals are to build experience in security operations, governance, risk and compliance (GRC), incident response, vulnerability management, and other areas of cybersecurity while continuing to expand my knowledge and certifications.
 
+As I gain professional experience, I would also like to grow into a leadership position where I can help guide security teams, improve security practices, and contribute to an organization's overall security strategy.
 ## Skills at a Glance
 
 | Category | Tools / Concepts |
