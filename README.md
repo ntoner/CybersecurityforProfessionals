@@ -5,7 +5,7 @@ I earned my Bachelor of Science in Computer and Information Systems from Robert 
 
 My experience includes network security, Linux security, vulnerability assessment, security operations, governance, risk and compliance (GRC), incident response, TLS and certificate security, and data analytics. I enjoy identifying security weaknesses, analyzing technical information, solving problems, and developing practical solutions to improve security.
 
-##Education
+Education
 Robert Morris University
 Bachelor of Science in Computer and Information Systems
 Focus: Data Analytics
