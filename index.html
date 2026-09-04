@@ -1,1 +1,877 @@
-<h1>Coming soon</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nathan Toner | Cybersecurity Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PASSWORD GATE -->
+<div id="password-gate" class="password-gate">
+
+    <div class="password-box">
+
+        <span class="section-label">PRIVATE PORTFOLIO</span>
+
+        <h1>Cybersecurity Portfolio</h1>
+
+        <p>
+            This portfolio is currently in staging.
+            Enter the password to continue.
+        </p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+        >
+
+        <button onclick="checkPassword()">
+            Enter Portfolio
+        </button>
+
+        <p id="password-error" class="password-error"></p>
+
+    </div>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div id="content" style="display:none;">
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+
+        <nav class="nav-container">
+
+            <a href="#home" class="logo">NT</a>
+
+            <div class="nav-links">
+
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Development</a>
+                <a href="#tls-audit">TLS Audit</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-container">
+
+                <div class="hero-copy">
+
+                    <span class="section-label">
+                        CYBERSECURITY • INFORMATION SYSTEMS
+                    </span>
+
+                    <h1>
+                        Nathan Toner
+                    </h1>
+
+                    <h2>
+                        Cybersecurity Student &amp; Security Professional
+                    </h2>
+
+                    <p class="hero-description">
+                        Building practical cybersecurity skills through
+                        hands-on labs, security operations, network 
+security,
+                        Linux hardening, and security testing.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="button button-primary">
+                            View My Work
+                        </a>
+
+                        <a
+                            
+href="https://github.com/ntoner/CybersecurityforProfessionals"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="button button-secondary"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-photo">
+
+                    <img
+                        src="assets/IMG_7568 3.jpg"
+                        alt="Nathan Toner"
+                        class="profile-image"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    ABOUT
+                </span>
+
+                <h2>
+                    Building a Foundation in Cybersecurity
+                </h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <p>
+I earned my Bachelor of Science in Computer and Information Systems from Robert 
+Morris University with a focus in Data Analytics. My education has given me a 
+strong foundation in technology, programming, databases, and data analysis.                
+</p>
+
+                <p>
+I enjoy learning how systems work, identifying security weaknesses, analyzing 
+problems, and developing practical solutions to improve security. Through 
+coursework, hands-on labs, and projects, I have gained experience working with 
+cybersecurity tools and analyzing technical information.                </p>
+
+                <p>
+I am always looking to expand my knowledge and continue developing my skills in 
+cybersecurity and information technology while applying critical thinking, 
+communication, teamwork, and problem-solving to real-world challenges.                
+</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills" class="section section-alt">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    TECHNICAL SKILLS
+                </span>
+
+                <h2>
+                    Tools &amp; Technologies
+                </h2>
+
+                <p>
+                    Technologies and platforms I have worked with through
+                    coursework, labs, and hands-on cybersecurity practice.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+
+                    <span class="skill-number">01</span>
+
+                    <h3>Security Operations</h3>
+
+                    <p>
+                        Security monitoring, detection, investigation,
+                        and cloud security.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Microsoft Sentinel</span>
+                        <span>Microsoft Defender</span>
+                        <span>Azure</span>
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">02</span>
+
+                    <h3>Network Security</h3>
+
+                    <p>
+                        Network discovery, traffic analysis, and
+                        security assessment.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Nmap</span>
+                        <span>Wireshark</span>
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">03</span>
+
+                    <h3>Security Testing</h3>
+
+                    <p>
+                        Vulnerability assessment, penetration testing,
+                        and security testing in controlled environments.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Metasploit</span>
+                        <span>OpenSSL</span>
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">04</span>
+
+                    <h3>Linux Security</h3>
+
+                    <p>
+                        Linux administration, system hardening,
+                        authentication, and security monitoring.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Ubuntu</span>
+                        <span>PAM</span>
+                        <span>auditd</span>
+                        <span>AIDE</span>
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">05</span>
+
+                    <h3>Programming</h3>
+
+                    <p>
+                        Programming and database technologies used for
+                        cybersecurity and information systems.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>HTML</span>
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">06</span>
+
+                    <h3>Data &amp; Analytics</h3>
+
+                    <p>
+                        Data analysis, visualization, reporting, and
+                        dashboard development.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Power BI</span>
+                        <span>Pandas</span>
+                        <span>Excel</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    HANDS-ON EXPERIENCE
+                </span>
+
+                <h2>
+                    Projects &amp; Labs
+                </h2>
+
+                <p>
+                    Practical cybersecurity work covering security
+                    operations, network security, Linux security,
+                    and security testing.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            LINUX SECURITY
+                        </span>
+
+                        <h3>
+                            Linux Hardening Lab
+                        </h3>
+
+                        <p>
+                            Hands-on Linux security hardening focused on
+                            improving system configuration, user security,
+                            permissions, and monitoring.
+                        </p>
+
+                        <div class="project-tools">
+                            <span>Ubuntu</span>
+                            <span>PAM</span>
+                            <span>auditd</span>
+                            <span>AIDE</span>
+                        </div>
+
+                        <a
+                            
+href="https://docs.google.com/document/d/11iFzcnBXJmF6zXOx4JnBEBTFQLr7OSkE8r9POEDb-tA/edit?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View Lab →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            NETWORK SECURITY
+                        </span>
+
+                        <h3>
+                            Network Reconnaissance Lab
+                        </h3>
+
+                        <p>
+                            Hands-on network reconnaissance and service
+                            discovery using Nmap to identify hosts,
+                            open ports, and running services.
+                        </p>
+
+                        <div class="project-tools">
+                            <span>Nmap</span>
+                            <span>Network Reconnaissance</span>
+                            <span>Security Assessment</span>
+                        </div>
+
+                        <a
+                            
+href="https://docs.google.com/document/d/1y0PXH1S_h54pPFbkZNCgP2at7RD2qj963NDe-fbaJ3E/edit?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View Lab →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            SECURITY OPERATIONS
+                        </span>
+
+                        <h3>
+                            Security Monitoring Lab
+                        </h3>
+
+                        <p>
+                            Hands-on security monitoring and analysis
+                            focused on identifying suspicious activity
+                            and improving security visibility.
+                        </p>
+
+                        <div class="project-tools">
+                            <span>Microsoft Sentinel</span>
+                            <span>Microsoft Defender</span>
+                            <span>Security Monitoring</span>
+                        </div>
+
+                        <a
+                            
+href="https://docs.google.com/document/d/1WFTO3v7jaSMGhUl1hZsdP62w3Y3kR-C6OknSlAF2xcI/edit?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View Lab →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            SECURITY TESTING
+                        </span>
+
+                        <h3>
+                            TLS &amp; Certificate Security Audit
+                        </h3>
+
+                        <p>
+                            Evaluated TLS configurations and certificate
+                            security using OpenSSL and SSL Labs to
+                            identify weaknesses and recommend
+                            security improvements.
+                        </p>
+
+                        <div class="project-tools">
+                            <span>OpenSSL</span>
+                            <span>SSL Labs</span>
+                            <span>TLS</span>
+                            <span>Certificates</span>
+                        </div>
+
+                        <a
+                            
+href="https://github.com/ntoner/CybersecurityforProfessionals/blob/staging/tls-audits/audit-1.md"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View Audit →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" class="section section-alt">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    PROFESSIONAL DEVELOPMENT
+                </span>
+
+                <h2>
+                    Certifications &amp; Development
+                </h2>
+
+                <p>
+                    Continuing to build cybersecurity knowledge through
+                    certifications, labs, and hands-on practice.
+                </p>
+
+            </div>
+
+
+            <div class="development-grid">
+
+                <article class="development-card">
+
+                    <span class="status-label">
+                        PLANNED
+                    </span>
+
+                    <h3>
+                        CompTIA Security+
+                    </h3>
+
+                    <p>
+                        Currently preparing for the CompTIA Security+
+                        certification.
+                    </p>
+
+                    <div class="development-meta">
+                        Target: 2026-12
+                    </div>
+
+                </article>
+
+
+                <article class="development-card">
+
+                    <span class="status-label status-muted">
+                        PLANNED
+                    </span>
+
+                    <h3>
+                        CompTIA CySA+
+                    </h3>
+
+                    <p>
+                        Planned as a future certification to continue
+                        developing security operations and threat
+                        analysis skills.
+                    </p>
+
+                    <div class="development-meta">
+                        Target: 2026-12
+                    </div>
+
+                </article>
+
+
+                <article class="development-card">
+
+                    <span class="status-label">
+                        HANDS-ON
+                    </span>
+
+                    <h3>
+                        Cybersecurity Labs
+                    </h3>
+
+                    <p>
+                        Continued hands-on practice in network security,
+                        Linux security, security monitoring, and
+                        vulnerability assessment.
+                    </p>
+
+                    <div class="development-meta">
+                        Ongoing
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TLS AUDIT -->
+        <section id="tls-audit" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    SECURITY RESEARCH
+                </span>
+
+                <h2>
+                    TLS &amp; Certificate Security Audit
+                </h2>
+
+                <p>
+                    A security assessment focused on identifying
+                    weaknesses in TLS configurations and certificate
+                    validation.
+                </p>
+
+            </div>
+
+
+            <div class="audit-summary">
+
+                <div class="audit-item">
+
+                    <span class="audit-severity medium">
+                        MEDIUM
+                    </span>
+
+                    <h3>
+                        TLS 1.1 Configuration
+                    </h3>
+
+                    <p>
+                        Identified support for deprecated TLS 1.1.
+                        Recommended disabling TLS 1.1 and requiring
+                        modern TLS versions.
+                    </p>
+
+                </div>
+
+
+                <div class="audit-item">
+
+                    <span class="audit-severity high">
+                        HIGH
+                    </span>
+
+                    <h3>
+                        Weak Diffie-Hellman Parameters
+                    </h3>
+
+                    <p>
+                        Identified a 480-bit Diffie-Hellman configuration
+                        that does not provide an appropriate level of
+                        security.
+                    </p>
+
+                </div>
+
+
+                <div class="audit-item">
+
+                    <span class="audit-severity medium">
+                        MEDIUM
+                    </span>
+
+                    <h3>
+                        Incomplete Certificate Chain
+                    </h3>
+
+                    <p>
+                        Identified certificate chain validation issues
+                        caused by a missing intermediate certificate.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="audit-link-container">
+
+                <a
+                    
+href="https://github.com/ntoner/CybersecurityforProfessionals/blob/staging/tls-audits/audit-1.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-primary"
+                >
+                    Read Full TLS Audit
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- GITHUB -->
+        <section class="section section-alt">
+
+            <div class="github-card">
+
+                <span class="section-label">
+                    SOURCE CODE &amp; DOCUMENTATION
+                </span>
+
+                <h2>
+                    View My GitHub Repository
+                </h2>
+
+                <p>
+                    Explore my cybersecurity labs, research, write-ups,
+                    tools, templates, and portfolio development.
+                </p>
+
+                <a
+                    
+href="https://github.com/ntoner/CybersecurityforProfessionals"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-primary"
+                >
+                    Visit GitHub Repository →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    CONTACT
+                </span>
+
+                <h2>
+                    Let's Connect
+                </h2>
+
+                <p>
+                    I am always interested in connecting with other
+                    cybersecurity professionals, students, and
+                    organizations.
+                </p>
+
+            </div>
+
+
+            <div class="contact-links">
+
+                <a
+                    href="mailto:ntoner1346@gmail.com"
+                    class="contact-link"
+                >
+                    Email
+                </a>
+
+                <a
+                    
+href="https://www.linkedin.com/in/nathan-toner-b86424354"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+                    LinkedIn
+                </a>
+
+                <a
+                    href="https://github.com/ntoner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+                    GitHub
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Nathan Toner. Cybersecurity Portfolio.
+        </p>
+
+        <p>
+            Built with HTML &amp; CSS.
+        </p>
+
+    </footer>
+
+</div>
+
+
+<!-- PASSWORD SCRIPT -->
+<script>
+
+function checkPassword() {
+
+    const password =
+        document.getElementById("password").value;
+
+    const correctPassword =
+        "Staging123!";
+
+    const content =
+        document.getElementById("content");
+
+    const gate =
+        document.getElementById("password-gate");
+
+    const error =
+        document.getElementById("password-error");
+
+
+    if (password === correctPassword) {
+
+        gate.style.display = "none";
+
+        content.style.display = "block";
+
+    } else {
+
+        error.textContent =
+            "Incorrect password. Please try again.";
+
+    }
+
+}
+
+
+document
+    .getElementById("password")
+    .addEventListener("keypress", function(event) {
+
+        if (event.key === "Enter") {
+
+            checkPassword();
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
