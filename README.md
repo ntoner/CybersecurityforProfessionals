@@ -40,6 +40,8 @@ As I gain professional experience, I would also like to grow into a leadership p
 | [certifications-and-skills](./certifications-and-skills) | Certifications, training, and skills developed throughout the bootcamp |
 | [tls-audits](./tls-audits) | TLS, certificates, encryption, PKI, and security audit work |
 
+## QR Code
+![QR code linking to this project](github-qr-code.png)
 ## Website
 
 Live version of this portfolio: https://ntoner.github.io/CybersecurityforProfessionals/
