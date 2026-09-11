@@ -37,3 +37,10 @@ Another important takeaway was that IP addresses, filenames, and other simple in
 - Sigma rules can turn investigation findings into detections
 - Behavior-based detections are harder for attackers to avoid
 - Incident findings can be used to improve future security
+
+
+## Lab Documents
+
+- [Day 4-5 Investigation Spreadsheet](https://docs.google.com/spreadsheets/d/1dvqTtX3Hlqd8hl9GnHGBgADna3Ug5jBb_u01MbLGRKI/edit?usp=sharing)
+- [MTB Incident Scoping Report](https://docs.google.com/document/d/1yfNAtg24sijbJpM-LuUKV10qMlkqvyEQTl86K5qbDdM/edit?usp=sharing)
+- [Threat Hunting and Detection Engineering Report](https://docs.google.com/document/d/1vfdYsbQUXGV-eLGmP035WGjScGBKfRSROZ5BRUoYE5c/edit?usp=sharing)
